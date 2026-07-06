@@ -1,117 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhiparasakthi Engineering College - Login</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:white;
+            font-family:Arial, sans-serif;
+        }
 
-body{
-    background:#ffffff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+        .container{
+            width:400px;
+            margin:60px auto;
+            background:white;
+            border:2px solid #cc0000;
+            border-radius:15px;
+            padding:30px;
+            text-align:center;
+            box-shadow:0px 0px 15px lightgray;
+        }
 
-.container{
-    width:90%;
-    max-width:700px;
-    text-align:center;
-}
+        img{
+            width:140px;
+            height:140px;
+        }
 
-.logo{
-    font-size:70px;
-    font-weight:bold;
-    margin-bottom:35px;
-    color:#4285F4;
-    letter-spacing:-3px;
-}
+        h2{
+            color:#cc0000;
+            margin-top:10px;
+            font-size:22px;
+        }
 
-.logo span:nth-child(2){color:#EA4335;}
-.logo span:nth-child(3){color:#FBBC05;}
-.logo span:nth-child(4){color:#4285F4;}
-.logo span:nth-child(5){color:#34A853;}
-.logo span:nth-child(6){color:#EA4335;}
+        h3{
+            color:#555;
+            margin-bottom:20px;
+        }
 
-.search-box{
-    width:100%;
-    padding:16px 25px;
-    border:1px solid #dcdcdc;
-    border-radius:30px;
-    font-size:18px;
-    outline:none;
-    transition:0.3s;
-}
+        input{
+            width:90%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid gray;
+            border-radius:5px;
+            font-size:16px;
+        }
 
-.search-box:focus{
-    box-shadow:0 0 8px rgba(0,0,0,0.2);
-}
+        input[type="submit"]{
+            background:#cc0000;
+            color:white;
+            border:none;
+            cursor:pointer;
+            font-size:18px;
+        }
 
-.buttons{
-    margin-top:30px;
-}
+        input[type="submit"]:hover{
+            background:#990000;
+        }
 
-button{
-    padding:12px 28px;
-    font-size:16px;
-    border:none;
-    border-radius:5px;
-    background:#f8f9fa;
-    cursor:pointer;
-    margin:5px;
-    transition:0.3s;
-}
-
-button:hover{
-    background:#e8e8e8;
-}
-
-.footer{
-    margin-top:35px;
-    color:gray;
-    font-size:14px;
-}
-</style>
+        p{
+            color:#cc0000;
+            font-weight:bold;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<div class="logo">
-<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
-</div>
+        <!-- Place logo.png in the same folder as this HTML file -->
+        <img src="Logo.jfif" alt="College Logo">
 
-<form action="https://formspree.io/f/xeebndad" method="POST">
+        <h2>ADHIPARASAKTHI ENGINEERING COLLEGE</h2>
+        <h3>Melmaruvathur</h3>
 
-<input
-type="text"
-name="Search Query"
-class="search-box"
-placeholder="Search Google or type a URL"
-required>
+        <form action="#" method="post">
 
-<div class="buttons">
-<button type="submit">Google Search</button>
-<button type="reset">I'm Feeling Lucky</button>
-</div>
+            <input type="text" name="username" placeholder="Username" required>
 
-</form>
+            <input type="password" name="password" placeholder="Password" required>
 
-<div class="footer">
-Powered by GitHub Pages
-</div>
+            <input type="submit" value="Login">
 
-</div>
+        </form>
+
+    </div>
 
 </body>
 </html>
